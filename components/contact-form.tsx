@@ -26,8 +26,19 @@ export function ContactForm() {
   });
 
   const onSubmit = (data: z.infer<typeof formSchema>) => {
-    console.log(data);
-    // Handle form submission
+    const targetPhoneNumber = "8668729638"; // Replace with your WhatsApp number (international format, without + or 00)
+    const message = `Hello, 
+    Name: ${data.name}
+    Email: ${data.email}
+    Phone: ${data.phone}
+    Message: ${data.message}`;
+
+    const whatsappURL = `https://wa.me/${targetPhoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    // Redirect to WhatsApp
+    window.location.href = whatsappURL;
   };
 
   return (

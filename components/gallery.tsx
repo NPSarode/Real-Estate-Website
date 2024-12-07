@@ -1,24 +1,33 @@
 "use client"
 
 import Image from 'next/image';
+import Pic1 from '../assets/Gallary/1.jpeg';
+import Pic2 from '../assets/Gallary/2.jpeg';
+import Pic3 from '../assets/Gallary/3.jpeg';
+import Pic4 from '../assets/Gallary/4.jpeg';
+import Pic5 from '../assets/Gallary/5.jpeg';
 
 const images = [
   {
-    src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80',
+    src: Pic1,
     alt: 'Luxury apartment exterior',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80',
+    src: Pic2,
     alt: 'Modern living room',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&q=80',
+    src: Pic3,
     alt: 'Spacious bedroom',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80',
+    src: Pic4,
     alt: 'Designer kitchen',
   },
+  {
+    src: Pic5,
+    alt: 'Designer kitchen',
+  }
 ];
 
 export function Gallery() {

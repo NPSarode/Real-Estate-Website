@@ -10,12 +10,12 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Real Estate Property',
   // title: 'Prakruti - Luxury Residential Project in Bangalore',
-  description: 'Discover luxury living at Prakruti - Premium residential apartments in Bangalore featuring modern amenities, sustainable design, and prime location.',
-  keywords: 'Prakruti, luxury apartments, Bangalore real estate, residential projects, premium homes',
+  description: 'Discover luxury living at Malpani - Premium residential apartments in Bangalore featuring modern amenities, sustainable design, and prime location.',
+  keywords: 'Malpani, luxury apartments, Bangalore real estate, residential projects, premium homes',
   openGraph: {
-    title: 'Prakruti - Luxury Residential Project in Bangalore',
+    title: 'Malpani - Luxury Residential Project in Pashan, Pune',
     description: 'Premium residential apartments featuring modern amenities and sustainable design',
-    images: ['/images/hero.jpg'],
+    images: ['/assets/logo.png'],
   },
 };
 
