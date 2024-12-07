@@ -26,7 +26,7 @@ export function ContactForm() {
   });
 
   const onSubmit = (data: z.infer<typeof formSchema>) => {
-    const targetPhoneNumber = "8668729638"; // Replace with your WhatsApp number (international format, without + or 00)
+    const targetPhoneNumber = "9766802703"; // Replace with your WhatsApp number (international format, without + or 00)
     const message = `Hello, 
     Name: ${data.name}
     Email: ${data.email}
