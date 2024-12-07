@@ -9,6 +9,19 @@ import {
   Sun,
   Wifi,
   Waves,
+  Bus,
+  Building,
+  Camera,
+  Flower,
+  DoorOpen,
+  Dam,
+  MessageSquare,
+  MapPin,
+  PawPrint,
+  Medal,
+  Flag,
+  Theater,
+  House,
 } from 'lucide-react';
 
 const amenities = [
@@ -20,6 +33,23 @@ const amenities = [
   { icon: Car, title: 'Parking Space' },
   { icon: Sun, title: 'Solar Power' },
   { icon: Wifi, title: 'High-Speed Internet' },
+  { icon: Bus, title: 'Bus Pickup/Drop' },
+  { icon: Building, title: 'Portal' },
+  { icon: DoorOpen, title: 'Entry Court' },
+  { icon: Dam, title: 'Water Feature' },
+  { icon: Users, title: 'Club House' },
+  { icon: Camera, title: 'Selfie Point' },
+  { icon: MessageSquare, title: 'Chit-Chat Corner' },
+  { icon: MapPin, title: 'Drop Off' },
+  { icon: Flower, title: 'All Season Flower Garden' },
+  { icon: Flower, title: 'Swing Park' },
+  { icon: PawPrint, title: 'Pets Park' },
+  { icon: Medal, title: 'Net-Cricket' },
+  // { icon: Lawn, title: 'Leisure Lawn' },
+  { icon: Flag, title: 'Flag Hoisting' },
+  { icon: Theater, title: 'Amphitheater' },
+  { icon: House, title: 'Grand Purpose Court' },
+  // { icon: Path, title: 'Reflexology Pathway' },
 ];
 
 export function Amenities() {

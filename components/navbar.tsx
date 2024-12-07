@@ -22,7 +22,7 @@ export function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="text-2xl font-bold text-emerald-600">
-              Prakruti
+              Malpani
             </Link>
           </div>
           

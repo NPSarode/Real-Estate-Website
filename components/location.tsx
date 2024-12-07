@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 export function Location() {
   return (
@@ -9,12 +9,12 @@ export function Location() {
             Prime Location
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Strategically located in Bangalore with easy access to business hubs and entertainment centers
+            Strategically located in Pune with easy access to business hubs and entertainment centers.
           </p>
         </div>
         <div className="bg-gray-200 rounded-lg overflow-hidden h-96">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.84916296526!2d77.6309395!3d12.9539974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1710644001037!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.921377317818!2d73.78347817449744!3d18.546497587335073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf34f9396ed3%3A0x16a7c2730a7db1ec!2sS.%20No-130%2C%205%2C%20Baner%20-%20Pashan%20Link%20Rd%2C%20Pashan%2C%20Pune%2C%20Maharashtra%20411021!5e0!3m2!1sen!2sin!4v1710644001037!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
