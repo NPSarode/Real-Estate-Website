@@ -6,12 +6,19 @@ import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
+const projects = [
+  "2 BHK",
+  "3 BHK",
+  "4 BHK"
+];
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
   phone: z.string().min(10, "Phone number must be at least 10 digits"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
+  project: z.string().min(1, "Please select a project")
 });
 
 export function ContactForm() {
@@ -21,24 +28,24 @@ export function ContactForm() {
       name: "",
       email: "",
       phone: "",
-      message: "",
+      project: ""
     },
   });
 
   const onSubmit = (data: z.infer<typeof formSchema>) => {
-    const targetPhoneNumber = "9766802703"; // Replace with your WhatsApp number (international format, without + or 00)
-    const message = `Hello, 
-    Name: ${data.name}
-    Email: ${data.email}
-    Phone: ${data.phone}
-    Message: ${data.message}`;
+    const message = `
+*New Inquiry from Website*
 
-    const whatsappURL = `https://wa.me/${targetPhoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
+*Name:* ${data.name}
+*Email:* ${data.email}
+*Phone:* ${data.phone}
+*Project:* ${data.project}
 
-    // Redirect to WhatsApp
-    window.location.href = whatsappURL;
+*Sent from:* Malpani's Website`;
+    
+    const targetPhone = "9766802703";
+    const whatsappURL = `https://wa.me/${targetPhone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, '_blank');
   };
 
   return (
@@ -60,7 +67,7 @@ export function ContactForm() {
                 id="name"
                 {...form.register("name")}
                 placeholder="Enter your name..."
-                className="mt-1 "
+                className="mt-1 text-black bg-white border-dotted"
               />
               {form.formState.errors.name && (
                 <p className="text-red-500 text-sm mt-1">
@@ -75,7 +82,7 @@ export function ContactForm() {
                 type="email"
                 placeholder="Enter your email..."
                 {...form.register("email")}
-                className="mt-1 "
+                className="mt-1 text-black bg-white border-dotted"
               />
               {form.formState.errors.email && (
                 <p className="text-red-500 text-sm mt-1">
@@ -90,7 +97,7 @@ export function ContactForm() {
                 type="tel"
                 placeholder="Enter your phone number..."
                 {...form.register("phone")}
-                className="mt-1 "
+                className="mt-1 text-black bg-white border-dotted"
               />
               {form.formState.errors.phone && (
                 <p className="text-red-500 text-sm mt-1">
@@ -99,17 +106,22 @@ export function ContactForm() {
               )}
             </div>
             <div className="flex flex-col gap-1">
-              <Label className="text-black" htmlFor="message">Message</Label>
-              <textarea
-                id="message"
-                placeholder="Enter your message..."
-                {...form.register("message")}
-                className="mt-1 block w-full px-3 border border-dotted py-2 rounded-md bg-white  shadow-sm "
-                rows={4}
-              />
-              {form.formState.errors.message && (
+              <Label className="text-black" htmlFor="project">Select Project</Label>
+              <Select onValueChange={(value) => form.setValue("project", value)}>
+                <SelectTrigger className="bg-white border-dotted text-black">
+                  <SelectValue placeholder="Select a project" />
+                </SelectTrigger>
+                <SelectContent>
+                  {projects.map((project) => (
+                    <SelectItem key={project} value={project}>
+                      {project}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+              {form.formState.errors.project && (
                 <p className="text-red-500 text-sm mt-1">
-                  {form.formState.errors.message.message}
+                  {form.formState.errors.project.message}
                 </p>
               )}
             </div>

@@ -7,6 +7,7 @@ import { Amenities } from '@/components/amenities';
 import { Gallery } from '@/components/gallery';
 import { Location } from '@/components/location';
 import { ContactForm } from '@/components/contact-form';
+import { FormModal } from '@/components/FormModal';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Gallery />
       </Suspense>
       <Location />
+      <FormModal/>
       <ContactForm />
     </>
   );
