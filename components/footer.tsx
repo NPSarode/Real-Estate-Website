@@ -8,9 +8,12 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">About Malpani</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">About Propitious Properties</h3>
             <p className="text-sm">
               Luxury residential project in Pashan featuring modern amenities and sustainable design.
+            </p>
+            <p className="text-xs mt-2">
+              MahaRERA No. A52100040012
             </p>
           </div>
           <div>
@@ -25,10 +28,11 @@ export function Footer() {
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-sm">
-              <li>123 Project Site</li>
-              <li>Pune, Maharashtra</li>
-              <li>Phone: 91 97668 02703</li>
-              <li>Email: omkokate7215@gmail.com</li>
+              <li>4th Floor, Anubhuti Apartment</li>
+              <li>Office no, 402, Lane 1, Bavdhan</li>
+              <li>Pune, Maharashtra 411021</li>
+              <li>Phone: +91 89564 66791</li>
+              <li>Email: propitiousprop@gmail.com</li>
             </ul>
           </div>
           <div>
@@ -50,7 +54,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Malpani. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Propitious Properties Pvt. Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

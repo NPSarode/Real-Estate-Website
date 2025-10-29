@@ -41,9 +41,9 @@ export function ContactForm() {
 *Phone:* ${data.phone}
 *Project:* ${data.project}
 
-*Sent from:* Malpani's Website`;
-    
-    const targetPhone = "9766802703";
+*Sent from:* Propitious Properties Website`;
+
+    const targetPhone = "918956466791";
     const whatsappURL = `https://wa.me/${targetPhone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
   };
