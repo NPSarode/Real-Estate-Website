@@ -8,7 +8,7 @@ export function Disclaimer() {
     <section className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* QR Codes */}
-        <div className="grid grid-cols-2 gap-4 lg:gap-0 md:gap-8 mb-8">
+        {/* <div className="grid grid-cols-2 gap-4 lg:gap-0 md:gap-8 mb-8">
           <div className="aspect-square relative w-full max-w-[120px] mx-auto">
             <Image
               src="https://m-soulstrings.in/assets/img/wingb.png"
@@ -25,7 +25,7 @@ export function Disclaimer() {
               className="object-contain"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Registration Details */}
         <div className="space-y-4 text-sm md:text-base ">
