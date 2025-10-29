@@ -1,32 +1,27 @@
 "use client"
 
 import Image from 'next/image';
-import Pic1 from '../assets/Gallary/1.jpeg';
-import Pic2 from '../assets/Gallary/2.jpeg';
-import Pic3 from '../assets/Gallary/3.jpeg';
-import Pic4 from '../assets/Gallary/4.jpeg';
-import Pic5 from '../assets/Gallary/5.jpeg';
 
 const images = [
   {
-    src: Pic1,
+    src: 'https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1200',
     alt: 'Luxury apartment exterior',
   },
   {
-    src: Pic2,
+    src: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200',
     alt: 'Modern living room',
   },
   {
-    src: Pic3,
+    src: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1200',
     alt: 'Spacious bedroom',
   },
   {
-    src: Pic4,
+    src: 'https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&w=1200',
     alt: 'Designer kitchen',
   },
   {
-    src: Pic5,
-    alt: 'Designer kitchen',
+    src: 'https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    alt: 'Modern interior',
   }
 ];
 

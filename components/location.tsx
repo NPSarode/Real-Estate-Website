@@ -14,7 +14,7 @@ export function Location() {
         </div>
         <div className="bg-gray-200 rounded-lg overflow-hidden h-96">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.921377317818!2d73.78347817449744!3d18.546497587335073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf34f9396ed3%3A0x16a7c2730a7db1ec!2sS.%20No-130%2C%205%2C%20Baner%20-%20Pashan%20Link%20Rd%2C%20Pashan%2C%20Pune%2C%20Maharashtra%20411021!5e0!3m2!1sen!2sin!4v1710644001037!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0777983474657!2d73.7575629!3d18.5962024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e3e6800001%3A0x1!2sAnubhuti%20Apartment%2C%20Lane%201%2C%20Bavdhan%2C%20Pune%2C%20Maharashtra%20411021!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -23,6 +23,16 @@ export function Location() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
+        </div>
+        <div className="mt-4 text-center">
+          <a
+            href="https://maps.app.goo.gl/71nuW1UArLhuhMxM7?g_st=aw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors"
+          >
+            View on Google Maps
+          </a>
         </div>
         <div className="mt-8 grid md:grid-cols-3 gap-8">
           <div className="text-center">

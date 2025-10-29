@@ -29,20 +29,23 @@ export function Disclaimer() {
 
         {/* Registration Details */}
         <div className="space-y-4 text-sm md:text-base ">
-          <p>MahaRERA Registration Details: Wing B - <span className="font-semibold">P52100076782</span> & Wing C - <span className="font-semibold">P52100055678</span> 
+          <p>MahaRERA Registration Details: Wing B - <span className="font-semibold">P52100076782</span> & Wing C - <span className="font-semibold">P52100055678</span>
             <Link href="https://maharera.maharashtra.gov.in/" className="hover:text-white text-blue-300 ">
             (View on MahaRERA Website)
             </Link>
             </p>
-          <p>Channel Partner RERA Number : – A52100044678</p>
+          <p>Channel Partner RERA Number: A52100040012</p>
           
           <div className="mt-8">
             <h3 className="text-lg font-semibold mb-4">Disclaimer:</h3>
             <p className="mb-4">
-              Please note that this website serves as an informational portal managed by a RERA authorized real estate agent and is not an official site. It does not constitute an offer or guarantee of any services. Prices displayed here are subject to change without prior notice, and property availability cannot be guaranteed. The images presented are for representational purposes only and may not accurately reflect the actual properties. Your data may be shared with Real Estate Regulatory Authority (RERA) registered developers for further processing as necessary. Additionally, updates and information may be sent to the mobile number or email address registered with us.
+              The information on this website is provided by Propitious Properties Pvt. Ltd. (RERA No. A52100040012) for general guidance only. All project details, images, and prices are indicative and subject to change without prior notice.
             </p>
             <p className="mb-4">
-              All rights are reserved for the content, design, and information on this website, protected by copyright and other intellectual property rights. Unauthorized use or reproduction of the content may violate applicable laws. For accurate and up-to-date information regarding services, pricing, availability, and other details, it is recommended to directly contact us through the provided contact information. We appreciate your visit to our website.
+              Users are advised to verify all information independently before making any purchase or investment decision. Propitious Properties Pvt. Ltd. is not liable for any loss or damage resulting from reliance on website content.
+            </p>
+            <p className="mb-4">
+              Use of this website implies acceptance of our Terms & Conditions.
             </p>
           </div>
 

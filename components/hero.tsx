@@ -4,14 +4,13 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Download,  } from 'lucide-react';
 import Link from 'next/link';
-import Background from '../assets/M-SOULSTRINGS Sales Presenter_page-0002.jpg';
 
 export function Hero() {
   return (
     <div className="relative min-h-screen flex items-center">
       <Image
-        src={Background || "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80"}
-        alt="Malpani - M Soul Strings"
+        src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Propitious Properties - Premium Residences"
         fill
         className="object-cover object-left-top"
         priority
@@ -20,7 +19,7 @@ export function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Welcome to Malpani - M Soul Strings 
+            Welcome to Propitious Properties
           </h1>
           <p className="text-xl text-gray-200 mb-8">
             Premium residential apartments in Pashan featuring modern amenities,
