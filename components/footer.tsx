@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">About Propitious Properties</h3>
             <p className="text-sm">
-              Luxury residential project in Pashan featuring modern amenities and sustainable design.
+              Welcome to Propitious Properties Pvt. Ltd., a RERA-registered real estate consultant firm, is dedicated to connecting people with thier dream properties since 2020. Our experience, integrity and commitment to transparancy make us a trusted partner in your pursuit of perfect spaces.
             </p>
             <p className="text-xs mt-2">
               MahaRERA No. A52100040012

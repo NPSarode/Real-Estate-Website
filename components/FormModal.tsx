@@ -71,10 +71,10 @@ export function FormModal() {
                 <Input id="mobile" name="mobile" type="tel" placeholder="Enter your mobile number" required />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="project">Select Project</Label>
+                <Label htmlFor="project">COnfiguration</Label>
                 <Select name="project">
                   <SelectTrigger className="bg-white text-black border-dotted">
-                    <SelectValue placeholder="Select a project" />
+                    <SelectValue placeholder="Select..." />
                   </SelectTrigger>
                   <SelectContent>
                     {projects.map((project) => (

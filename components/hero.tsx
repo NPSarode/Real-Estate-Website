@@ -22,8 +22,7 @@ export function Hero() {
             Welcome to Propitious Properties
           </h1>
           <p className="text-xl text-gray-200 mb-8">
-            Premium residential apartments in Pashan featuring modern amenities,
-            sustainable design, and a prime location.
+            Because you deserve the best!
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             {/* <Link href={"#contact"}>

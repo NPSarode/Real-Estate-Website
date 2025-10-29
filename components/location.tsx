@@ -9,7 +9,9 @@ export function Location() {
             Prime Location
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Strategically located in Pune with easy access to business hubs and entertainment centers.
+            4th Floor, Anubhuti Apartment
+            Office no, 402, Lane 1, Bavdhan
+            Pune, Maharashtra 411021
           </p>
         </div>
         <div className="bg-gray-200 rounded-lg overflow-hidden h-96">
