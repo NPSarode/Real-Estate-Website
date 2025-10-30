@@ -1,16 +1,18 @@
 "use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
+import Logo from "@/assets/Logo.jpeg"; // Import the logo
 
 const navItems = [
-  { label: 'Home', href: '/' },
-  { label: 'Features', href: '#features' },
-  { label: 'Amenities', href: '#amenities' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Location', href: '#location' },
-  { label: 'Contact', href: '#contact' },
+  { label: "Home", href: "/" },
+  { label: "Features", href: "#features" },
+  { label: "Amenities", href: "#amenities" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Location", href: "#location" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export function Navbar() {
@@ -20,12 +22,21 @@ export function Navbar() {
     <nav className="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-2xl font-bold text-emerald-600">
-              Propitious Properties
+          <div className="flex-shrink-0 flex items-center space-x-2">
+            <Link href="/" className="flex items-center">
+              <Image
+                src={Logo}
+                alt="Propitious Logo"
+                width={50}  // adjust as needed
+                height={50} // adjust as needed
+                className="object-contain"
+              />
+              <span className="ml-2 text-2xl font-bold text-emerald-600">
+                Propitious Properties
+              </span>
             </Link>
           </div>
-          
+
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (

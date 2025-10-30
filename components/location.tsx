@@ -6,7 +6,7 @@ export function Location() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-500 mb-4">
-            Prime Location
+            Office Location
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             4th Floor, Anubhuti Apartment
@@ -16,7 +16,7 @@ export function Location() {
         </div>
         <div className="bg-gray-200 rounded-lg overflow-hidden h-96">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0777983474657!2d73.7575629!3d18.5962024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e3e6800001%3A0x1!2sAnubhuti%20Apartment%2C%20Lane%201%2C%20Bavdhan%2C%20Pune%2C%20Maharashtra%20411021!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.424657999186!2d73.78132750000002!3d18.5097024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf7f305039e3%3A0xc79827f8c97cb49b!2sPropitious%20Properties%20Private%20Limited!5e0!3m2!1sen!2sin!4v1761811145814!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -28,7 +28,7 @@ export function Location() {
         </div>
         <div className="mt-4 text-center">
           <a
-            href="https://maps.app.goo.gl/71nuW1UArLhuhMxM7?g_st=aw"
+            href="https://maps.app.goo.gl/j24kKoFhjNcurKP36"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors"

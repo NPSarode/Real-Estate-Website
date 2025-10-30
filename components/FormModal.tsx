@@ -7,11 +7,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
-const projects = [
-    "2 BHK",
-    "3 BHK",
-    "4 BHK"
-  ];
+const projects = ["2 BHK", "3 BHK", "4 BHK"];
+const budgets = ["50L - 60L", "70L - 80L", "80L - 1Cr", "1Cr Above", "2Cr Above"];
 
 export function FormModal() {
   const [open, setOpen] = useState(false);
@@ -20,7 +17,6 @@ export function FormModal() {
     const timer = setTimeout(() => {
       setOpen(true);
     }, 2000);
-
     return () => clearTimeout(timer);
   }, []);
 
@@ -28,9 +24,10 @@ export function FormModal() {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
     const data = {
-      name: formData.get('name'),
-      mobile: formData.get('mobile'),
-      project: formData.get('project')
+      name: formData.get("name"),
+      mobile: formData.get("mobile"),
+      project: formData.get("project"),
+      budget: formData.get("budget"),
     };
 
     // Format message for WhatsApp
@@ -40,27 +37,28 @@ export function FormModal() {
 *Name:* ${data.name}
 *Mobile:* ${data.mobile}
 *Project:* ${data.project}
+*Budget:* ${data.budget}
 
-*Sent from:* Malpani's Website`;
+*Sent from:* Propitious's Website`;
 
-    // Your phone number
-    const targetPhone = "9766802703";
-    
-    // Create WhatsApp URL
+    // WhatsApp target number
+    const targetPhone = "8956466791";
     const whatsappURL = `https://wa.me/${targetPhone}?text=${encodeURIComponent(message)}`;
-    
+
     // Open WhatsApp
-    window.open(whatsappURL, '_blank');
+    window.open(whatsappURL, "_blank");
     setOpen(false);
   };
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="sm:max-w-[425px] ">
+      <DialogContent className="sm:max-w-[425px]">
         <DialogTitle className="text-2xl font-bold text-center">Interested?</DialogTitle>
         <div className="grid gap-4 py-4">
-          <div className="px-6 ">
-            <p className="text-center text-gray-600 mb-6">Fill in your details and we'll get back to you!</p>
+          <div className="px-6">
+            <p className="text-center text-gray-600 mb-6">
+              Fill in your details and we'll get back to you!
+            </p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
@@ -71,7 +69,7 @@ export function FormModal() {
                 <Input id="mobile" name="mobile" type="tel" placeholder="Enter your mobile number" required />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="project">COnfiguration</Label>
+                <Label htmlFor="project">Configuration</Label>
                 <Select name="project">
                   <SelectTrigger className="bg-white text-black border-dotted">
                     <SelectValue placeholder="Select..." />
@@ -80,6 +78,22 @@ export function FormModal() {
                     {projects.map((project) => (
                       <SelectItem key={project} value={project}>
                         {project}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              {/* ✅ New Budget Field */}
+              <div className="space-y-2">
+                <Label htmlFor="budget">Budget</Label>
+                <Select name="budget">
+                  <SelectTrigger className="bg-white text-black border-dotted">
+                    <SelectValue placeholder="Select..." />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {budgets.map((budget) => (
+                      <SelectItem key={budget} value={budget}>
+                        {budget}
                       </SelectItem>
                     ))}
                   </SelectContent>

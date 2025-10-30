@@ -29,13 +29,13 @@ export function Disclaimer() {
 
         {/* Registration Details */}
         <div className="space-y-4 text-sm md:text-base ">
-          <p>MahaRERA Registration Details: Wing B - <span className="font-semibold">P52100076782</span> & Wing C - <span className="font-semibold">P52100055678</span>
+          {/* <p>MahaRERA Registration Details: Wing B - <span className="font-semibold">P52100076782</span> & Wing C - <span className="font-semibold">P52100055678</span>
             <Link href="https://maharera.maharashtra.gov.in/" className="hover:text-white text-blue-300 ">
             (View on MahaRERA Website)
             </Link>
             </p>
           <p>Channel Partner RERA Number: A52100040012</p>
-          
+           */}
           <div className="mt-8">
             <h3 className="text-lg font-semibold mb-4">Disclaimer:</h3>
             <p className="mb-4">
