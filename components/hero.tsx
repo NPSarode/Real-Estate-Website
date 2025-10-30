@@ -19,7 +19,7 @@ export function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Welcome to Propitious Properties
+            Welcome to Propitious Properties Pvt. ltd. 
           </h1>
           <p className="text-xl text-gray-200 mb-8">
             Because you deserve the best!
@@ -33,8 +33,8 @@ export function Hero() {
             </Link> */}
             <Link href={"#contact"}>
             <Button size="lg" variant="outline" className="light:text-dark  dark:text-white border-white light:hover:bg-dark/10 dark:hover:bg-white/10">
-              Get a Brochure
-              <Download className="ml-2" size={16}/>
+              Contact us
+              
             </Button>
             </Link>
           </div>

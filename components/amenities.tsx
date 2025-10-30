@@ -58,7 +58,7 @@ export function Amenities() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-500 mb-4">
-            Are you searching for projet who have world class amenities?
+            Are you searching for project which have world class amenities?
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Enjoy a lifestyle filled with comfort and convenience

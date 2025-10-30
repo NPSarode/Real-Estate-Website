@@ -14,11 +14,23 @@ const projects = [
   "4 BHK"
 ];
 
+
+const budget = [
+  "50L - 60L",
+  "70L - 80L",
+  "80L - 1Cr",
+  "1Cr Above",
+  "2Cr Above"
+
+];
+
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
   phone: z.string().min(10, "Phone number must be at least 10 digits"),
-  project: z.string().min(1, "Please select a project")
+  project: z.string().min(1, "Please select a project"),
+  budget: z.string().min(1, "Please select a budget")
+
 });
 
 export function ContactForm() {
@@ -28,7 +40,8 @@ export function ContactForm() {
       name: "",
       email: "",
       phone: "",
-      project: ""
+      project: "",
+      budget: ""
     },
   });
 
@@ -40,6 +53,8 @@ export function ContactForm() {
 *Email:* ${data.email}
 *Phone:* ${data.phone}
 *Project:* ${data.project}
+*budget:* ${data.budget}
+
 
 *Sent from:* Propitious Properties Website`;
 
@@ -57,7 +72,7 @@ export function ContactForm() {
               Contact Us
             </h2>
             <p className="text-lg text-gray-600">
-              Get in touch with us to know more about Prakruti
+              Get in touch with us to know more about Project
             </p>
           </div>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
@@ -106,10 +121,10 @@ export function ContactForm() {
               )}
             </div>
             <div className="flex flex-col gap-1">
-              <Label className="text-black" htmlFor="project">Select Project</Label>
+              <Label className="text-black" htmlFor="project">Configuration</Label>
               <Select onValueChange={(value) => form.setValue("project", value)}>
                 <SelectTrigger className="bg-white border-dotted text-black">
-                  <SelectValue placeholder="Select a project" />
+                  <SelectValue placeholder="select from here" />
                 </SelectTrigger>
                 <SelectContent>
                   {projects.map((project) => (
@@ -122,6 +137,27 @@ export function ContactForm() {
               {form.formState.errors.project && (
                 <p className="text-red-500 text-sm mt-1">
                   {form.formState.errors.project.message}
+                </p>
+              )}
+            </div>
+            <div className="flex flex-col gap-1">
+              <Label className="text-black" htmlFor="budget">Budget</Label>
+              <Select onValueChange={(value) => form.setValue("budget", value)}>
+                <SelectTrigger className="bg-white border-dotted text-black">
+                  <SelectValue placeholder="Select from here" />
+                </SelectTrigger>
+<SelectContent>
+  {budget.map((item) => (          // ✅ Correct array here
+    <SelectItem key={item} value={item}>
+      {item}
+    </SelectItem>
+  ))}
+</SelectContent>
+
+              </Select>
+              {form.formState.errors.budget && (
+                <p className="text-red-500 text-sm mt-1">
+                  {form.formState.errors.budget.message}
                 </p>
               )}
             </div>
