@@ -50,7 +50,7 @@ export function Disclaimer() {
           </div>
 
           {/* Footer Links */}
-          <div className="pt-4 border-t border-gray-700">
+          {/* <div className="pt-4 border-t border-gray-700">
             <div className="flex justify-center space-x-4">
               <Link href="https://m-soulstrings.in/privacy.html" className="hover:text-white text-blue-300 ">
                 privacy policy
@@ -60,7 +60,7 @@ export function Disclaimer() {
                 terms & conditions
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
